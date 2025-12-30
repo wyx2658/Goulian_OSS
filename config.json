@@ -1,0 +1,10 @@
+{
+  "api": {
+    "base_urls": [
+      "https://goulian.goulian.cc",
+    ],
+    "api_prefix": "/api/v1",
+    "connect_timeout": 30000,
+    "receive_timeout": 30000
+  }
+}
