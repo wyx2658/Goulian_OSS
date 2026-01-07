@@ -1,7 +1,7 @@
 {
   "api": {
     "base_urls": [
-      "https://goulian.goulian.cc"
+      "http://192.168.3.216"
     ],
     "api_prefix": "/api/v1",
     "connect_timeout": 30000,
@@ -11,3 +11,4 @@
     "amounts": [5, 10, 20, 50, 100, 380]
   }
 }
+
