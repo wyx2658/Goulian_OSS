@@ -8,11 +8,12 @@
     "receive_timeout": 30000
   },
   "auth": {
-    "enable_registration_code": true,
+    "enable_registration_code": false,
     "enable_guest_login": true
   },
   "recharge": {
     "amounts": [10, 20, 50, 100, 200, 500]
   }
 }
+
 
