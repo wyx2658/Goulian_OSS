@@ -9,7 +9,7 @@
   },
   "map": {
     "service_name": "OSS 离线地图",
-    "tile_url_template": "http://192.168.3.110:3000/OAM-World-1-8-min-J80/{z}/{x}/{y}",
+    "tile_url_template": "http://192.168.3.110:3000/World/{z}/{x}/{y}",
     "tile_subdomains": [],
     "min_zoom": 2,
     "max_zoom": 8,
