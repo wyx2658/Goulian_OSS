@@ -1,18 +1,24 @@
 {
   "api": {
     "base_urls": [
-      "http://192.168.3.110"
+      "http://192.168.3.110
     ],
     "api_prefix": "/api/v1",
     "connect_timeout": 30000,
     "receive_timeout": 30000
   },
   "map": {
-    "tile_url_template": "http://192.168.3.110:3000/OAM-World-1-8-min-J80/{z}/{x}/{y}.png",
+    "service_name": "OSS 离线地图",
+    "tile_url_template": "http://192.168.3.110:3000/OAM-World-1-8-min-J80/{z}/{x}/{y}",
     "tile_subdomains": [],
     "min_zoom": 2,
     "max_zoom": 8,
     "initial_zoom": 2.8,
+    "show_scale_bar": true,
+    "cache": {
+      "override_freshness_days": 30,
+      "max_size_mb": 512
+    },
     "initial_center": {
       "latitude": 35.8617,
       "longitude": 104.1954
