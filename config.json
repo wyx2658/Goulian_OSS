@@ -7,6 +7,17 @@
     "connect_timeout": 30000,
     "receive_timeout": 30000
   },
+  "map": {
+    "tile_url_template": "http://192.168.3.110:3000/OAM-World-1-8-min-J80/{z}/{x}/{y}.png",
+    "tile_subdomains": [],
+    "min_zoom": 2,
+    "max_zoom": 8,
+    "initial_zoom": 2.8,
+    "initial_center": {
+      "latitude": 35.8617,
+      "longitude": 104.1954
+    }
+  },
   "recharge": {
     "amounts": [10, 20, 50, 100, 200, 500]
   }
