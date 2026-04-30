@@ -8,33 +8,52 @@
     "receive_timeout": 30000
   },
   "map": {
-  "source_type": "vector",
-
-  "vector_source_name": "offline",
-
-  "tilejson": {
-    "format": "pbf",
-    "tiles": [
-      "http://192.168.3.110:3000/world/{z}/{x}/{y}"
-    ],
-    "vector_layers": [
-      { "id": "land" },
-      { "id": "coastline" },
-      { "id": "boundaries" },
-      { "id": "countries" },
-      { "id": "places" }
-    ]
+    "source_type": "vector",
+    "raster": {
+      "url_template": "https://your-oss-domain.com/map_tiles/{z}/{x}/{y}.png",
+      "subdomains": []
+    },
+    "vector": {
+      "source_name": "offline",
+      "tilejson": {
+        "format": "pbf",
+        "tiles": [
+          "http://192.168.3.110:3000/world/{z}/{x}/{y}"
+        ],
+        "vector_layers": [
+          {
+            "id": "land"
+          },
+          {
+            "id": "coastline"
+          },
+          {
+            "id": "boundaries"
+          },
+          {
+            "id": "countries"
+          },
+          {
+            "id": "places"
+          }
+        ]
+      }
+    },
+    "view": {
+      "min_zoom": 2,
+      "max_zoom": 8,
+      "initial_zoom": 2.8,
+      "show_scale_bar": true,
+      "initial_center": {
+        "latitude": 35.8617,
+        "longitude": 104.1954
+      }
+    },
+    "cache": {
+      "override_freshness_days": 30,
+      "max_size_mb": 512
+    }
   },
-
-  "min_zoom": 2,
-  "max_zoom": 8,
-  "initial_zoom": 2.8,
-
-  "initial_center": {
-    "latitude": 35.8617,
-    "longitude": 104.1954
-  }
-}
   "recharge": {
     "amounts": [10, 20, 50, 100, 200, 500]
   }
