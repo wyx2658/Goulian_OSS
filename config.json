@@ -8,19 +8,16 @@
     "receive_timeout": 30000
   },
   "map": {
-    "tile_url_template": "http://192.168.3.110:3000/world/{z}/{x}/{y}",
+    "tile_url_template": "http://192.168.3.110/map_tiles/{z}/{x}/{y}",
     "tile_subdomains": [],
-    "min_zoom": 0,
-    "max_zoom": 6,
+    "tile_format": "raster",
+    "min_zoom": 2,
+    "max_zoom": 8,
     "initial_zoom": 2.8,
     "show_scale_bar": true,
-    "cache": {
-      "override_freshness_days": 30,
-      "max_size_mb": 512
-    },
     "initial_center": {
-      "latitude": 38.788894,
-      "longitude": 25.3125
+      "latitude": 35.8617,
+      "longitude": 104.1954
     }
   },
   "recharge": {
