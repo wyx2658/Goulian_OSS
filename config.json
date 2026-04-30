@@ -8,9 +8,11 @@
     "receive_timeout": 30000
   },
   "map": {
+    "tile_url_template": "http://192.168.3.110/world/{z}/{x}/{y}",
     "tile_subdomains": [],
     "tile_format": "vector",
-    "vector_style_url": "http://192.168.3.110:3000/world/{z}/{x}/{y}",
+    "vector_style_url": "",
+    "vector_max_native_zoom": 6,
     "min_zoom": 2,
     "max_zoom": 8,
     "initial_zoom": 2.8,
