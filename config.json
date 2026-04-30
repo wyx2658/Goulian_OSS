@@ -1,28 +1,57 @@
 {
+
   "api": {
+
     "base_urls": [
+
       "http://192.168.3.110"
+
     ],
+
     "api_prefix": "/api/v1",
+
     "connect_timeout": 30000,
+
     "receive_timeout": 30000
+
   },
+
   "map": {
+
     "tile_url_template": "http://192.168.3.110:8083/dark.json",
+
     "tile_subdomains": [],
-    "tile_format": "vector",
-    "vector_style_url": "http://192.168.3.110:3000/world/{z}/{x}/{y}",
-    "vector_max_native_zoom": 6,
-    "min_zoom": 2,
-    "max_zoom": 8,
+
+    "min_zoom": 0,
+
+    "max_zoom": 6,
+
     "initial_zoom": 2.8,
+
     "show_scale_bar": true,
+
+    "cache": {
+
+      "override_freshness_days": 30,
+
+      "max_size_mb": 512
+
+    },
+
     "initial_center": {
-      "latitude": 35.8617,
-      "longitude": 104.1954
+
+      "latitude": 38.788894,
+
+      "longitude": 25.3125
+
     }
+
   },
+
   "recharge": {
+
     "amounts": [10, 20, 50, 100, 200, 500]
+
   }
+
 }
