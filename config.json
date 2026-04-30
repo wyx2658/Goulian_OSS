@@ -8,22 +8,32 @@
     "receive_timeout": 30000
   },
   "map": {
-    "service_name": "OSS 离线地图",
-    "tile_url_template": "http://192.168.3.110:3000/world/{z}/{x}/{y}",
+    "tile_url_template": "https://your-oss-domain.com/map_tiles/{z}/{x}/{y}.png",
     "tile_subdomains": [],
-    "min_zoom": 2,
-    "max_zoom": 8,
-    "initial_zoom": 2.8,
-    "show_scale_bar": true,
-    "cache": {
-      "override_freshness_days": 30,
-      "max_size_mb": 512
+    "vector_source_name": "offline",
+    "tilejson": {
+      "format": "pbf",
+      "tiles": [
+        "http://192.168.3.110:3000/world/{z}/{x}/{y}"
+      ],
+      "vector_layers": [
+        {
+          "id": "land"
+        },
+        {
+          "id": "coastline"
+        },
+        {
+          "id": "boundaries"
+        },
+        {
+          "id": "countries"
+        },
+        {
+          "id": "places"
+        }
+      ]
     },
-    "initial_center": {
-      "latitude": 35.8617,
-      "longitude": 104.1954
-    }
-  },
   "recharge": {
     "amounts": [10, 20, 50, 100, 200, 500]
   }
